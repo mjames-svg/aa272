@@ -1,0 +1,52 @@
+{
+  "seeds": [
+    272,
+    847,
+    1927,
+    3117,
+    9872,
+    11234
+  ],
+  "cohort": {
+    "heldout_games": [
+      2023091004,
+      2023091005,
+      2023091006,
+      2023091010,
+      2023091011
+    ],
+    "candidate_eligible_tracks": 2639,
+    "included_tracks": 556,
+    "included_high_speed_tracks": 281,
+    "included_non_high_speed_tracks": 275,
+    "background_sampling": "At most 55 non-high-speed tracks per game chosen with fixed seed; all eligible >=7m/s tracks included.",
+    "frame_filter": "At least 23 consecutive frames; original 10 Hz NFL pre-pass tracking only."
+  },
+  "model": "All NFL Doppler measurements simulated; real wearable GPS geometry and LOO residual proxy",
+  "sampling": "Only actual simulated 1-Hz sampled epochs; no interpolation; original 10-Hz RFID provides reference only",
+  "cv_model": "state [ECEF 3D velocity, receiver clock drift], F=I; Qv=q^2*dt",
+  "ca_model": "state [ECEF velocity, ECEF acceleration, receiver clock drift]; Fv,a=dt and white-jerk Q",
+  "process_std_1s_cv_mps": {
+    "low": 0.75,
+    "default": 2.5,
+    "high": 5.0
+  },
+  "process_std_1s_ca_acceleration_change_mps2": 3.0,
+  "clock_drift_random_walk_variance_mps2_per_s": 0.25,
+  "R": "raw per-satellite Doppler sigma from Pixel Watch (minimum 0.15 m/s); not independently calibrated",
+  "initialization": "requires >=6 GPS satellites, full-rank independent Doppler WLS, formal sigma<=4 m/s, speed<=15 m/s; no ground truth",
+  "innovation_outlier_gate_z": 5.0,
+  "wls4_note": "Four-satellite WLS is a separate fair control with zero residual redundancy at exactly four satellites; initialization of all Kalman filters still requires six",
+  "cv6_min_update_satellites": 6,
+  "cv4_min_update_satellites": 4,
+  "ca4_min_update_satellites": 4,
+  "max_prediction_gap_seconds": 2.0,
+  "acceptance_max_sigma_mps": 4.0,
+  "acceptance_max_speed_mps": 15.0,
+  "prediction_max_sigma_mps": 8.0,
+  "prediction_policy_note": "Prediction-only estimates have a deliberately looser uncertainty threshold than satellite updates; they are not equivalent-quality GNSS fixes",
+  "sealed_roof": "no available Doppler observation for the entire player track (no possible initialization)",
+  "chosen_settings": "All parameters specified before held-out analysis, not selected by test-set ground-truth scores",
+  "additional_dynamics": "entry first open-sky 1-Hz epoch then fixed partial/deep canopy; outage1/outage2 deliberately mask ALL satellites at epoch index 1 or indices 1,2 of each 4-sample cycle; these are hypothetical transient outages and not Phase-10 roof results",
+  "study_limit": "Do not interpret model-based predictions as satellite fixes or as evidence of NFL receiver performance."
+}

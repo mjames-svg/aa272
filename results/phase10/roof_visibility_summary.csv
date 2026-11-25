@@ -1,0 +1,5 @@
+sky,mean_satellites,median_satellites,at_least_6_pct
+open,7.170263788968825,7.0,100.0
+partial_canopy,6.013489208633094,6.0,71.82254196642685
+deep_canopy,4.608812949640288,5.0,26.648681055155876
+sealed_roof,0.0,0.0,0.0

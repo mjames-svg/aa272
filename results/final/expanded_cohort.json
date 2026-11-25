@@ -1,0 +1,45 @@
+{
+  "heldout_games": [
+    2023091004,
+    2023091005,
+    2023091006,
+    2023091010,
+    2023091011
+  ],
+  "candidate_eligible_tracks": 2639,
+  "included_tracks": 556,
+  "included_high_speed_tracks": 281,
+  "included_non_high_speed_tracks": 275,
+  "background_sampling": "At most 55 non-high-speed tracks per game chosen with fixed seed; all eligible >=7m/s tracks included.",
+  "frame_filter": "At least 23 consecutive frames; original 10 Hz NFL pre-pass tracking only.",
+  "seeds": [
+    272,
+    847,
+    1927,
+    3117,
+    9872,
+    11234
+  ],
+  "scenarios": {
+    "observed_like": {
+      "noise": 1.0,
+      "fault_rate": 0.0,
+      "block": 0.0
+    },
+    "injected_faults": {
+      "noise": 1.0,
+      "fault_rate": 0.05,
+      "block": 0.0
+    },
+    "combined_degradation": {
+      "noise": 2.0,
+      "fault_rate": 0.05,
+      "block": 0.3
+    }
+  },
+  "models": [
+    "independent",
+    "persistent"
+  ],
+  "method_settings": "WLS, FDE z=5, robust Huber k=3.5; common >=6 satellites, formal sigma <=4 m/s, speed <=15 m/s."
+}

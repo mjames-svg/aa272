@@ -1,0 +1,40 @@
+{
+  "seeds": [
+    272,
+    847,
+    1927,
+    3117,
+    9872,
+    11234
+  ],
+  "cohort": {
+    "heldout_games": [
+      2023091004,
+      2023091005,
+      2023091006,
+      2023091010,
+      2023091011
+    ],
+    "candidate_eligible_tracks": 2639,
+    "included_tracks": 556,
+    "included_high_speed_tracks": 281,
+    "included_non_high_speed_tracks": 275,
+    "background_sampling": "At most 55 non-high-speed tracks per game chosen with fixed seed; all eligible >=7m/s tracks included.",
+    "frame_filter": "At least 23 consecutive frames; original 10 Hz NFL pre-pass tracking only."
+  },
+  "sky_masks": {
+    "open": "Satellite elevation >=10 degrees",
+    "partial_canopy": "Open mask, excluding two opposite azimuth sectors centered at 90 and 270 deg relative to a randomized roof orientation, half-width 25 deg, below 40 deg elevation",
+    "deep_canopy": "Open mask, excluding sectors with half-width 45 deg, below 50 deg elevation",
+    "sealed_roof": "All direct GPS line-of-sight signals blocked; 0 satellites"
+  },
+  "roof_orientation": "Uniform in [0,180) degrees, fixed within each player track; shared across all scenarios for given seed/track",
+  "signal_modes": {
+    "measured_proxy": "Leave-one-out Pixel Watch residual proxy bootstrap with AR(1) phi=0.5; no faults",
+    "degraded_sensitivity": "Same random proxy draws x2 plus common persistent 5% satellite faults of 5-10 m/s amplitude"
+  },
+  "receiver": "GPS-only 7-9 satellite observation templates from real Pixel Watch in an unrelated location and time; hypothetical stadium geometries",
+  "sampling": "1 Hz randomly phased with 10-Hz NFL reference, held-out five NFL games",
+  "processing": ">=6 satellites, <=4 m/s formal 3D velocity sigma, <=15 m/s solution speed; FDE z=5, robust Huber=3.5",
+  "science_limit": "No roof geometry, RF propagation, live NFL GPS receivers, real stadium GNSS measurements, or measured sprinting GNSS data."
+}

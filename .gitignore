@@ -1,0 +1,37 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local raw data are retrieved separately from original providers
+data/*
+!data/README.md
+gedvm_dataset-main/
+external/
+
+# Regenerated experiment outputs, large epoch-level logs and intermediate figures
+results/**/paired_epoch_results.csv
+results/**/kalman_paired_epoch_results.csv
+results/**/event_outcomes.csv
+results/**/heldout_expanded_epoch_results.csv
+results/**/matched_watch_rg_velocity_epochs.csv
+results/**/figures/
+results/**/*.png
+results/**/*.pdf
+results/**/*.log
+
+# Reports, exports, temporary packages
+*.zip
+*.pdf
+*.pptx
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.synctex.gz
+.DS_Store
+Thumbs.db

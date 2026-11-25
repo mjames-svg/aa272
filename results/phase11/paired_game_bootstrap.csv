@@ -1,0 +1,35 @@
+sky,signal,method,delta_recall_pp,lower_95_pp,upper_95_pp,resampling_unit
+open,measured_proxy,kf_cv6,-0.5807200929152149,-1.0611735330836454,-0.11904761904761904,five held-out games; repeated seeds are NOT independent games
+open,measured_proxy,kf_cv4,-0.5807200929152149,-1.0515247108307044,0.0,five held-out games; repeated seeds are NOT independent games
+open,measured_proxy,kf_ca4,0.5807200929152149,0.050505050505050504,1.0083036773428233,five held-out games; repeated seeds are NOT independent games
+partial_canopy,measured_proxy,kf_cv6,-0.4645760743321719,-0.9505703422053232,0.0,five held-out games; repeated seeds are NOT independent games
+partial_canopy,measured_proxy,kf_cv4,-0.4645760743321719,-0.9025270758122743,0.0,five held-out games; repeated seeds are NOT independent games
+partial_canopy,measured_proxy,kf_ca4,0.17421602787456447,-0.3412969283276451,0.8097165991902834,five held-out games; repeated seeds are NOT independent games
+deep_canopy,measured_proxy,kf_cv6,0.0,-0.6060606060606061,0.39447731755424065,five held-out games; repeated seeds are NOT independent games
+deep_canopy,measured_proxy,kf_cv4,0.0,-0.6044905008635578,0.39447731755424065,five held-out games; repeated seeds are NOT independent games
+deep_canopy,measured_proxy,kf_ca4,0.11614401858304298,-0.4317789291882556,0.4708097928436911,five held-out games; repeated seeds are NOT independent games
+open,degraded_sensitivity,kf_cv6,-1.1033681765389083,-1.9943019943019944,-0.5078485687903971,five held-out games; repeated seeds are NOT independent games
+open,degraded_sensitivity,kf_cv4,-1.1033681765389083,-1.932367149758454,-0.5584192439862543,five held-out games; repeated seeds are NOT independent games
+open,degraded_sensitivity,kf_ca4,0.4645760743321719,-0.22321428571428573,1.303538175046555,five held-out games; repeated seeds are NOT independent games
+partial_canopy,degraded_sensitivity,kf_cv6,-0.40650406504065045,-1.6666666666666667,0.4489337822671156,five held-out games; repeated seeds are NOT independent games
+partial_canopy,degraded_sensitivity,kf_cv4,-0.34843205574912894,-1.8181818181818181,0.6172839506172839,five held-out games; repeated seeds are NOT independent games
+partial_canopy,degraded_sensitivity,kf_ca4,0.29036004645760743,-1.0606060606060606,1.1299435028248588,five held-out games; repeated seeds are NOT independent games
+deep_canopy,degraded_sensitivity,kf_cv6,-0.23228803716608595,-0.8463541666666666,0.10964912280701754,five held-out games; repeated seeds are NOT independent games
+deep_canopy,degraded_sensitivity,kf_cv4,-0.17421602787456447,-0.8733624454148472,0.24330900243309003,five held-out games; repeated seeds are NOT independent games
+deep_canopy,degraded_sensitivity,kf_ca4,-0.05807200929152149,-0.6550218340611353,0.273972602739726,five held-out games; repeated seeds are NOT independent games
+partial_canopy__measured_proxy__entry,dynamic,wls4,10.685249709639953,9.317585301837271,12.177121771217712,Five held-out games; paired six seeds
+partial_canopy__measured_proxy__entry,dynamic,kf_cv6,-0.5226480836236934,-0.9345794392523364,0.05500550055005501,Five held-out games; paired six seeds
+partial_canopy__measured_proxy__entry,dynamic,kf_cv4,10.16260162601626,8.926342072409488,11.26855600539811,Five held-out games; paired six seeds
+partial_canopy__measured_proxy__entry,dynamic,kf_ca4,11.149825783972126,9.798676416707377,12.4031007751938,Five held-out games; paired six seeds
+deep_canopy__measured_proxy__entry,dynamic,wls4,24.854819976771196,23.058542413381122,26.73107890499195,Five held-out games; paired six seeds
+deep_canopy__measured_proxy__entry,dynamic,kf_cv6,0.11614401858304298,-0.45454545454545453,0.5424063116370809,Five held-out games; paired six seeds
+deep_canopy__measured_proxy__entry,dynamic,kf_cv4,24.274099883855982,22.06896551724138,26.16201859229748,Five held-out games; paired six seeds
+deep_canopy__measured_proxy__entry,dynamic,kf_ca4,25.958188153310104,24.305555555555557,27.651476078200215,Five held-out games; paired six seeds
+open__measured_proxy__outage1,dynamic,wls4,0.0,0.0,0.0,Five held-out games; paired six seeds
+open__measured_proxy__outage1,dynamic,kf_cv6,-0.8710801393728222,-1.5297906602254427,-0.40106951871657753,Five held-out games; paired six seeds
+open__measured_proxy__outage1,dynamic,kf_cv4,-0.8710801393728222,-1.5297906602254427,-0.411522633744856,Five held-out games; paired six seeds
+open__measured_proxy__outage1,dynamic,kf_ca4,0.7549361207897793,0.24067388688327315,1.5360983102918586,Five held-out games; paired six seeds
+open__measured_proxy__outage2,dynamic,wls4,0.0,0.0,0.0,Five held-out games; paired six seeds
+open__measured_proxy__outage2,dynamic,kf_cv6,-0.23228803716608595,-0.4830917874396135,-0.05159958720330237,Five held-out games; paired six seeds
+open__measured_proxy__outage2,dynamic,kf_cv4,-0.23228803716608595,-0.47961630695443647,-0.046296296296296294,Five held-out games; paired six seeds
+open__measured_proxy__outage2,dynamic,kf_ca4,0.9291521486643438,0.4975124378109453,1.8920445888984796,Five held-out games; paired six seeds

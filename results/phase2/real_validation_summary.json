@@ -1,0 +1,39 @@
+{
+  "method": "WLS GPS-only satellite pseudorange rate with precise SP3 geometry",
+  "interpretation": "observed residuals are proxies; no external truth for absolute velocity RMSE",
+  "watch_epoch_count": 698,
+  "four_satellite_epochs": 2,
+  "epochs_at_least_seven_satellites": 674,
+  "empirical_residual_count": 4146,
+  "cn0_vs_absolute_LOO_spearman_rho": -0.23121797630736693,
+  "cn0_vs_absolute_LOO_spearman_p": 1.9303240727522978e-51,
+  "bin_statistics": [
+    {
+      "cn0_bin_dbhz": "0-26",
+      "observations": 711,
+      "median_abs_leave_one_out_residual_mps": 1.0140289497245873,
+      "p95_abs_leave_one_out_residual_mps": 2.7335878887627527
+    },
+    {
+      "cn0_bin_dbhz": "26-30",
+      "observations": 821,
+      "median_abs_leave_one_out_residual_mps": 0.8739101101834271,
+      "p95_abs_leave_one_out_residual_mps": 2.481861533541873
+    },
+    {
+      "cn0_bin_dbhz": "30-34",
+      "observations": 1144,
+      "median_abs_leave_one_out_residual_mps": 0.7540957660147112,
+      "p95_abs_leave_one_out_residual_mps": 2.1441555196619753
+    },
+    {
+      "cn0_bin_dbhz": "34-100",
+      "observations": 1470,
+      "median_abs_leave_one_out_residual_mps": 0.492071272493113,
+      "p95_abs_leave_one_out_residual_mps": 1.8231170706856918
+    }
+  ],
+  "ppk_reference": "Proprietary Waypoint/NovAtel PPK_expe_AG.rg is not decoded: no independent velocity ground truth",
+  "gps_fix_comparison": "GPS Fix speed is same receiver processing, not independent validation",
+  "caveat": "LOO residuals can contain model mismatch, biases and motion effects; not i.i.d. measurement-error ground truth"
+}
