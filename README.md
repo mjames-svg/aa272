@@ -62,5 +62,3 @@ The `results/` directory contains a limited selection of existing summary tables
 ## Data and citation
 
 Input datasets are distributed by their original providers. Relevant sources are identified in the accompanying AA 272 paper, including NFL Big Data Bowl tracking data, the measured-watch GNSS dataset, SnapperGPS outdoor positioning recordings, and GEDVM driving records. Dataset download permissions and terms remain the responsibility of the person retrieving them.
-
-If submitting this project for coursework, follow the course's disclosure and collaboration requirements when describing how the code was developed.
